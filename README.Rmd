@@ -1,0 +1,46 @@
+# funneljoin-py
+A python port of funneljoin, by Emily Robinson
+
+## Examples
+
+```{python tags=c("hide-input")}
+# NOTE: this is for a nice github readme
+
+import pandas as pd
+
+# DataFrame display --------
+pd.set_option("display.max_rows", 6)
+from IPython import get_ipython
+
+# special ipython function to get the html formatter
+html_formatter = get_ipython().display_formatter.formatters['text/html']
+
+# here, we avoid the default df._repr_html_ method, since it inlines css
+# (which makes github angry)
+html_formatter.for_type(
+    pd.DataFrame,
+    lambda df: df.to_html(max_rows = pd.get_option("display.max_rows"), show_dimensions = True)
+)
+```
+
+```{python}
+from funneljoin import after_join, get_example_data
+
+landed, registered = get_example_data()
+```
+
+```{python}
+landed
+```
+
+```{python}
+registered
+```
+
+```{python}
+after_join(
+    landed, registered,
+    by_user = "user_id", by_time = "timestamp",
+    mode = "inner", type = "any-firstafter"
+    )
+```

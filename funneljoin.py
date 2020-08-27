@@ -104,6 +104,10 @@ def after_join(
 
     return res
 
-        
+def get_example_data():
+    import pkg_resources
+    import pandas as pd
+    landed = pkg_resources.resource_filename("funneljoin_data", "landed.csv")
+    reg = pkg_resources.resource_filename("funneljoin_data", "registered.csv")
 
-
+    return pd.read_csv(landed), pd.read_csv(reg)

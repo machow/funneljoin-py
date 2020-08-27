@@ -17,10 +17,12 @@ setup(
     name='funneljoin',
     version=version,
     py_modules=["funneljoin"],
+    packages=find_namespace_packages(include="funneljoin_data.*"),
     install_requires=['siuba'],
     description="Easy behavioral funnels with pandas or SQL",
     author='Michael Chow',
     author_email='mc_al_github@fastmail.com',
+    include_package_data=True,
     long_description=README,
     long_description_content_type="text/markdown",
     url='https://github.com/machow/funneljoin-py'
