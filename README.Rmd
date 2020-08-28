@@ -9,7 +9,7 @@ A python port of funneljoin, by Emily Robinson
 import pandas as pd
 
 # DataFrame display --------
-pd.set_option("display.max_rows", 6)
+pd.set_option("display.max_rows", 12)
 from IPython import get_ipython
 
 # special ipython function to get the html formatter

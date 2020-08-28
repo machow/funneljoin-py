@@ -43,9 +43,19 @@ landed
       <td>2018-07-02</td>
     </tr>
     <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
+      <th>3</th>
+      <td>4</td>
+      <td>2018-07-01</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>4</td>
+      <td>2018-07-04</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>5</td>
+      <td>2018-07-10</td>
     </tr>
     <tr>
       <th>6</th>
@@ -101,9 +111,14 @@ registered
       <td>2018-06-10</td>
     </tr>
     <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
+      <th>3</th>
+      <td>4</td>
+      <td>2018-07-02</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>2018-07-11</td>
     </tr>
     <tr>
       <th>5</th>
