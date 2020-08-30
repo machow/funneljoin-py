@@ -18,7 +18,7 @@ setup(
     version=version,
     py_modules=["funneljoin"],
     packages=find_namespace_packages(include="funneljoin_data.*"),
-    install_requires=['siuba'],
+    install_requires=['siuba>=0.0.24'],
     description="Easy behavioral funnels with pandas or SQL",
     author='Michael Chow',
     author_email='mc_al_github@fastmail.com',

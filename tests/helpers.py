@@ -110,6 +110,21 @@ def auto_types(df):
     return dtype
 
 
+# tribble ---------------------------------------------------------------------
+
+def tribble(header, *args):
+    from itertools import islice
+    import pandas as pd
+
+    k = len(header)
+
+    columns = {}
+    for ii, name in enumerate(header):
+        columns[name] = list(islice(args, ii, None, k))
+
+    return pd.DataFrame(columns)
+
+
 
 # fixtures --------------------------------------------------------------------
 
