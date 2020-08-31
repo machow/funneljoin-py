@@ -82,11 +82,6 @@ def after_join(
             _[pair_time_x] <= _[pair_time_y]
             )
 
-    # Monkey patch SQL case, to reset order_by attribute after join
-    # TODO: see https://github.com/machow/siuba/issues/276
-    if hasattr(pairs, 'order_by'):
-        pairs.order_by = tuple()
-
     # TODO: firstwithin
     if type_lhs in ["firstwithin", "lastbefore"]:
         raise NotImplementedError("Can't currently handle lhs type %s" % type_lhs)
