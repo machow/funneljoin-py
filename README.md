@@ -1,5 +1,5 @@
 # funneljoin-py
-A python port of funneljoin, by Emily Robinson
+A python port of the [funneljoin R package](https://github.com/robinsones/funneljoin), by Emily Robinson
 
 [![Build Status](https://travis-ci.com/machow/funneljoin-py.svg?branch=master)](https://travis-ci.com/machow/funneljoin-py)
 
